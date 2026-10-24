@@ -20,7 +20,7 @@ import {
   MessageCircle,
 } from "lucide-react";
 import { FaInstagram, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
-import "./interiorDesign.css";
+import "./InteriorDesign.css";
 
 const images = {
   hero: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1800&q=90",
