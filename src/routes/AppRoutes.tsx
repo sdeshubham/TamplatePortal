@@ -11,6 +11,17 @@ import PropertyDesign from "../pages/propertyDesign/PropertyDesign.js";
 const AppRoutes = () => {
   return (
     <Routes>
+      {/* Default Homepage */}
+      <Route
+        path="/"
+        element={
+          <>
+            <PageTitle title="MakeOver" />
+            <MakeOver />
+          </>
+        }
+      />
+
       <Route
         path="/makeOver"
         element={
@@ -70,6 +81,9 @@ const AppRoutes = () => {
           </>
         }
       />
+
+      {/* Page Not Found */}
+      <Route path="*" element={<h1>404 - Page Not Found</h1>} />
     </Routes>
   );
 };
