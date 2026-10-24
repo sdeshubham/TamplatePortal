@@ -1,6 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import React, { Suspense, lazy } from "react";
-import Login from "../pages/login/Login.js";
+
 import PageTitle from "../components/common/PageTitle.js";
 import MakeOver from "../pages/makeOver/MakeOver.js";
 import InteriorDesign from "../pages/interiorDesign/InteriorDesign.js";
@@ -13,7 +12,6 @@ const AppRoutes = () => {
   return (
     <Routes>
       <Route
-        index
         path="/makeOver"
         element={
           <>
@@ -24,7 +22,6 @@ const AppRoutes = () => {
       />
 
       <Route
-        index
         path="/interiorDesign"
         element={
           <>
@@ -35,7 +32,6 @@ const AppRoutes = () => {
       />
 
       <Route
-        index
         path="/weddingPhotography"
         element={
           <>
@@ -46,7 +42,6 @@ const AppRoutes = () => {
       />
 
       <Route
-        index
         path="/fitnessYoga"
         element={
           <>
@@ -57,7 +52,6 @@ const AppRoutes = () => {
       />
 
       <Route
-        index
         path="/boutiqueDesign"
         element={
           <>
@@ -68,7 +62,6 @@ const AppRoutes = () => {
       />
 
       <Route
-        index
         path="/propertyDesign"
         element={
           <>
