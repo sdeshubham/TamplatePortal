@@ -1,0 +1,14 @@
+.pageNotFound {
+  min-height: 80vh;
+  color: #252525;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+.pageNotFound h1 {
+  font-size: 24px;
+  font-weight: 500;
+}

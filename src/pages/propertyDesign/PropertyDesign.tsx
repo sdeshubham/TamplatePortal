@@ -107,9 +107,9 @@ export default function PropertyDesign() {
   );
   const enquire = (title: string) => {
     window.location.href =
-      "https://wa.me/919876543210?text=" +
+      "https://wa.me/917354400317?text=" +
       encodeURIComponent(
-        `Hi PrimeHomes, I am interested in ${title}. Please share more details.`,
+        `Hi Shubham, I am interested in ${title}. Please share more details.`,
       );
   };
   return (
@@ -131,8 +131,8 @@ export default function PropertyDesign() {
           <a href="#reviews">Testimonials</a>
           <a href="#contact">Contact</a>
         </nav>
-        <a className="prime-phone" href="tel:+919876543210">
-          ☎ +91 98765 43210
+        <a className="prime-phone" href="tel:+917354400317">
+          ☎ +91 73544 00317
         </a>
         <a className="prime-header-cta" href="#contact">
           Get In Touch
@@ -457,7 +457,7 @@ export default function PropertyDesign() {
             </a>
             <a
               className="prime-whatsapp-button"
-              href="https://wa.me/919876543210"
+              href="https://wa.me/917354400317"
             >
               ◉ Chat on WhatsApp
             </a>
@@ -476,9 +476,9 @@ export default function PropertyDesign() {
             <p>
               Share a few details and our property advisor will get in touch.
             </p>
-            <p className="prime-contact-detail">☎　+91 98765 43210</p>
-            <p className="prime-contact-detail">✉　hello@primehomes.in</p>
-            <p className="prime-contact-detail">⌖　Indore, Madhya Pradesh</p>
+            <p className="prime-contact-detail">☎　+91 73544 00317</p>
+            <p className="prime-contact-detail">✉　shubh18tech@gmail.com</p>
+            <p className="prime-contact-detail">⌖　Mumbai, Maharashtra</p>
           </div>
           <form
             className="prime-contact-form"
@@ -487,7 +487,7 @@ export default function PropertyDesign() {
               const d = new FormData(e.currentTarget);
               const msg = `Hi PrimeHomes, my name is ${d.get("name")}. I am interested in ${d.get("interest")}. Location: ${d.get("location")}. Budget: ${d.get("budget")}. Phone: ${d.get("phone")}.`;
               window.location.href =
-                "https://wa.me/919876543210?text=" + encodeURIComponent(msg);
+                "https://wa.me/917354400317?text=" + encodeURIComponent(msg);
             }}
           >
             <label>
@@ -550,9 +550,9 @@ export default function PropertyDesign() {
           </div>
           <div>
             <b>Contact Us</b>
-            <span>+91 98765 43210</span>
-            <span>hello@primehomes.in</span>
-            <span>Indore, Madhya Pradesh</span>
+            <span>+91 73544 00317</span>
+            <span>shubh18tech@gmail.com</span>
+            <span>Mumbai, Maharashtra</span>
           </div>
           <div>
             <b>Follow Us</b>

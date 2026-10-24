@@ -1,4 +1,3 @@
-
 import {
   ArrowRight,
   Activity,
@@ -16,17 +15,23 @@ import {
   CalendarDays,
 } from "lucide-react";
 import { useState } from "react";
+import { FaLinkedinIn } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import "./FitnessYoga.css";
 
 const fitnessImages = {
   hero: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1800&q=85",
-  strength: "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=700&q=85",
-  weightLoss: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=700&q=85",
+  strength:
+    "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=700&q=85",
+  weightLoss:
+    "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=700&q=85",
   yoga: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=700&q=85",
-  functional: "https://images.unsplash.com/photo-1534258936925-c58bed479fcb?auto=format&fit=crop&w=700&q=85",
-  wellness: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=900&q=85",
-  coach: "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=900&q=85",
+  functional:
+    "https://images.unsplash.com/photo-1534258936925-c58bed479fcb?auto=format&fit=crop&w=700&q=85",
+  wellness:
+    "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=900&q=85",
+  coach:
+    "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=900&q=85",
 };
 
 const programs = [
@@ -88,10 +93,7 @@ export default function FitnessYoga() {
     message: "",
   });
 
-  const updateForm = (
-    field: keyof typeof form,
-    value: string
-  ) => {
+  const updateForm = (field: keyof typeof form, value: string) => {
     setForm((previous) => ({ ...previous, [field]: value }));
   };
 
@@ -99,7 +101,7 @@ export default function FitnessYoga() {
     event.preventDefault();
 
     const message = [
-      "Hello FitLife Fitness & Yoga!",
+      "Hello Shubham Fitness & Yoga!",
       `Name: ${form.name}`,
       `Email: ${form.email}`,
       `Fitness Goal: ${form.goal}`,
@@ -108,9 +110,9 @@ export default function FitnessYoga() {
     ].join("\n");
 
     window.open(
-      `https://wa.me/?text=${encodeURIComponent(message)}`,
+      `https://wa.me/917354400317?text=${encodeURIComponent(message)}`,
       "_blank",
-      "noopener,noreferrer"
+      "noopener,noreferrer",
     );
   };
 
@@ -120,7 +122,9 @@ export default function FitnessYoga() {
     <div className="fy-site">
       <header className="fy-header">
         <a href="#fy-home" className="fy-brand" onClick={closeMenu}>
-          <span className="fy-brand-icon"><Activity size={27} /></span>
+          <span className="fy-brand-icon">
+            <Activity size={27} />
+          </span>
           <span>
             <strong>FITLIFE</strong>
             <small>FITNESS & YOGA</small>
@@ -145,7 +149,9 @@ export default function FitnessYoga() {
             ["Blog", "#fy-process"],
             ["Contact", "#fy-contact"],
           ].map(([label, href]) => (
-            <a href={href} key={label} onClick={closeMenu}>{label}</a>
+            <a href={href} key={label} onClick={closeMenu}>
+              {label}
+            </a>
           ))}
           <a className="fy-nav-cta" href="#fy-contact" onClick={closeMenu}>
             Join Now <ArrowRight size={14} />
@@ -161,7 +167,9 @@ export default function FitnessYoga() {
         >
           <div className="fy-hero-overlay" />
           <div className="fy-hero-content">
-            <span className="fy-eyebrow">FITNESS TRAINER & YOGA INSTRUCTOR</span>
+            <span className="fy-eyebrow">
+              FITNESS TRAINER & YOGA INSTRUCTOR
+            </span>
             <h1>
               Stronger Body
               <br />
@@ -169,8 +177,8 @@ export default function FitnessYoga() {
             </h1>
             <p>
               Personalized fitness and yoga programs to help
-              <br className="fy-desktop-break" /> you build a healthier,
-              happier and more confident you.
+              <br className="fy-desktop-break" /> you build a healthier, happier
+              and more confident you.
             </p>
             <div className="fy-hero-actions">
               <a className="fy-button fy-button-green" href="#fy-contact">
@@ -182,21 +190,39 @@ export default function FitnessYoga() {
             </div>
           </div>
           <div className="fy-hero-badge">
-            <span><CheckCircle2 size={17} /></span>
-            <div><strong>Your Goals. Your Pace.</strong><small>Your personal fitness journey starts here.</small></div>
+            <span>
+              <CheckCircle2 size={17} />
+            </span>
+            <div>
+              <strong>Your Goals. Your Pace.</strong>
+              <small>Your personal fitness journey starts here.</small>
+            </div>
           </div>
         </section>
 
         <section className="fy-benefits">
           {[
-            { icon: Users, title: "Personal Training", text: "1-on-1 Guidance" },
+            {
+              icon: Users,
+              title: "Personal Training",
+              text: "1-on-1 Guidance",
+            },
             { icon: Dumbbell, title: "Group Classes", text: "Train Together" },
             { icon: Leaf, title: "Yoga Sessions", text: "Find Your Balance" },
-            { icon: Heart, title: "Lifestyle Guidance", text: "Build Better Habits" },
+            {
+              icon: Heart,
+              title: "Lifestyle Guidance",
+              text: "Build Better Habits",
+            },
           ].map(({ icon: Icon, title, text }) => (
             <a href="#fy-programs" className="fy-benefit" key={title}>
-              <span><Icon size={22} /></span>
-              <div><strong>{title}</strong><small>{text}</small></div>
+              <span>
+                <Icon size={22} />
+              </span>
+              <div>
+                <strong>{title}</strong>
+                <small>{text}</small>
+              </div>
             </a>
           ))}
         </section>
@@ -207,8 +233,8 @@ export default function FitnessYoga() {
               <span className="fy-eyebrow fy-eyebrow-dark">OUR PROGRAMS</span>
               <h2>Transform Your Life</h2>
               <p>
-                Choose from personalized fitness and yoga programs
-                designed around your goals and lifestyle.
+                Choose from personalized fitness and yoga programs designed
+                around your goals and lifestyle.
               </p>
             </div>
             <a className="fy-outline-button" href="#fy-contact">
@@ -217,28 +243,36 @@ export default function FitnessYoga() {
           </div>
 
           <div className="fy-program-grid">
-            {programs.map(({ title, subtitle, description, image, icon: Icon }) => (
-              <article className="fy-program-card" key={title}>
-                <a href="#fy-contact" className="fy-program-image">
-                  <img src={image} alt={title} loading="lazy" />
-                  <span className="fy-program-icon"><Icon size={19} /></span>
-                </a>
-                <div className="fy-program-copy">
-                  <h3>{title}</h3>
-                  <span className="fy-program-subtitle">{subtitle}</span>
-                  <p>{description}</p>
-                  <a href="#fy-contact" className="fy-text-link">
-                    Learn More <ArrowRight size={14} />
+            {programs.map(
+              ({ title, subtitle, description, image, icon: Icon }) => (
+                <article className="fy-program-card" key={title}>
+                  <a href="#fy-contact" className="fy-program-image">
+                    <img src={image} alt={title} loading="lazy" />
+                    <span className="fy-program-icon">
+                      <Icon size={19} />
+                    </span>
                   </a>
-                </div>
-              </article>
-            ))}
+                  <div className="fy-program-copy">
+                    <h3>{title}</h3>
+                    <span className="fy-program-subtitle">{subtitle}</span>
+                    <p>{description}</p>
+                    <a href="#fy-contact" className="fy-text-link">
+                      Learn More <ArrowRight size={14} />
+                    </a>
+                  </div>
+                </article>
+              ),
+            )}
           </div>
         </section>
 
         <section className="fy-about" id="fy-about">
           <div className="fy-about-image">
-            <img src={fitnessImages.wellness} alt="Yoga and mindful wellness" loading="lazy" />
+            <img
+              src={fitnessImages.wellness}
+              alt="Yoga and mindful wellness"
+              loading="lazy"
+            />
             <div className="fy-image-tag">
               <Leaf size={20} />
               <span>Mind • Body • Balance</span>
@@ -247,25 +281,45 @@ export default function FitnessYoga() {
 
           <div className="fy-about-copy">
             <span className="fy-eyebrow fy-eyebrow-dark">ABOUT YOUR COACH</span>
-            <h2>Your Fitness &<br />Wellness Partner</h2>
+            <h2>
+              Your Fitness &<br />
+              Wellness Partner
+            </h2>
             <p>
-              I'm a fitness trainer and yoga instructor passionate about
-              helping people achieve their health and wellness goals.
-              With personalized plans and consistent support, I'm here
-              to guide you every step of the way.
+              I'm a fitness trainer and yoga instructor passionate about helping
+              people achieve their health and wellness goals. With personalized
+              plans and consistent support, I'm here to guide you every step of
+              the way.
             </p>
 
             <ul className="fy-check-list">
-              <li><CheckCircle2 size={17} /> Personalized workout plans</li>
-              <li><CheckCircle2 size={17} /> Flexible training options</li>
-              <li><CheckCircle2 size={17} /> Progress tracking & guidance</li>
-              <li><CheckCircle2 size={17} /> Supportive, judgment-free approach</li>
+              <li>
+                <CheckCircle2 size={17} /> Personalized workout plans
+              </li>
+              <li>
+                <CheckCircle2 size={17} /> Flexible training options
+              </li>
+              <li>
+                <CheckCircle2 size={17} /> Progress tracking & guidance
+              </li>
+              <li>
+                <CheckCircle2 size={17} /> Supportive, judgment-free approach
+              </li>
             </ul>
 
             <div className="fy-stats">
-              <div><strong>5+</strong><small>Years Experience</small></div>
-              <div><strong>1000+</strong><small>Happy Clients</small></div>
-              <div><strong>5000+</strong><small>Hours Trained</small></div>
+              <div>
+                <strong>5+</strong>
+                <small>Years Experience</small>
+              </div>
+              <div>
+                <strong>1000+</strong>
+                <small>Happy Clients</small>
+              </div>
+              <div>
+                <strong>5000+</strong>
+                <small>Hours Trained</small>
+              </div>
             </div>
 
             <a href="#fy-contact" className="fy-button fy-button-dark">
@@ -279,7 +333,9 @@ export default function FitnessYoga() {
             <div>
               <span className="fy-eyebrow fy-eyebrow-dark">CLIENT STORIES</span>
               <h2>Real People. Real Results.</h2>
-              <p>Every fitness journey is different. Here's what our clients say.</p>
+              <p>
+                Every fitness journey is different. Here's what our clients say.
+              </p>
             </div>
             <a href="#fy-contact" className="fy-outline-button">
               Start Your Journey <ArrowRight size={15} />
@@ -290,8 +346,13 @@ export default function FitnessYoga() {
             {reviews.map((review) => (
               <article className="fy-review-card" key={review.name}>
                 <div className="fy-review-top">
-                  <span className="fy-review-avatar"><Activity size={21} /></span>
-                  <div><strong>{review.name}</strong><small>{review.type}</small></div>
+                  <span className="fy-review-avatar">
+                    <Activity size={21} />
+                  </span>
+                  <div>
+                    <strong>{review.name}</strong>
+                    <small>{review.type}</small>
+                  </div>
                 </div>
                 <div className="fy-review-stars">★★★★★</div>
                 <p>“{review.text}”</p>
@@ -303,7 +364,11 @@ export default function FitnessYoga() {
         <section className="fy-process" id="fy-process">
           <div className="fy-process-heading">
             <span className="fy-eyebrow">YOUR NEXT CHAPTER</span>
-            <h2>Small Steps.<br />Stronger You.</h2>
+            <h2>
+              Small Steps.
+              <br />
+              Stronger You.
+            </h2>
             <p>Build a routine that works for your real life.</p>
             <a className="fy-button fy-button-green" href="#fy-contact">
               Get Started <ArrowRight size={15} />
@@ -314,7 +379,11 @@ export default function FitnessYoga() {
             {[
               ["01", "Set Your Goals", "Tell me what you want to achieve."],
               ["02", "Get Your Plan", "A program tailored to your needs."],
-              ["03", "Train Consistently", "Build healthy habits step by step."],
+              [
+                "03",
+                "Train Consistently",
+                "Build healthy habits step by step.",
+              ],
               ["04", "Track Progress", "Review your progress together."],
             ].map(([number, title, description]) => (
               <div className="fy-step" key={number}>
@@ -328,11 +397,21 @@ export default function FitnessYoga() {
 
         <section className="fy-contact" id="fy-contact">
           <div className="fy-contact-promo">
-            <img src={fitnessImages.coach} alt="Fitness training session" loading="lazy" />
+            <img
+              src={fitnessImages.coach}
+              alt="Fitness training session"
+              loading="lazy"
+            />
             <div className="fy-contact-promo-overlay" />
             <div className="fy-contact-promo-copy">
               <span className="fy-eyebrow">READY TO BEGIN?</span>
-              <h2>Your Health.<br />Your Goals.<br />My Support.</h2>
+              <h2>
+                Your Health.
+                <br />
+                Your Goals.
+                <br />
+                My Support.
+              </h2>
               <p>Let's build a healthier, stronger and happier you.</p>
               <a href="#fy-contact-form" className="fy-button fy-button-green">
                 Book a Free Consultation <ArrowRight size={15} />
@@ -343,14 +422,27 @@ export default function FitnessYoga() {
           <div className="fy-contact-info">
             <span className="fy-eyebrow fy-eyebrow-dark">GET IN TOUCH</span>
             <h3>Let's Talk Fitness</h3>
-            <p><Phone size={17} /> +91 98765 43210</p>
-            <p><Mail size={17} /> hello@fitlifeexample.com</p>
-            <p><MapPin size={17} /> Indore, Madhya Pradesh</p>
-            <p><Clock3 size={17} /> Mon–Sat · 6 AM–8 PM</p>
-            <p><FaInstagram size={17} /> @fitlife.example</p>
+            <p>
+              <Phone size={17} /> +91 73544 00317
+            </p>
+            <p>
+              <Mail size={17} /> shubh18tech@gmail.com
+            </p>
+            <p>
+              <MapPin size={17} /> Mumbai, Maharashtra
+            </p>
+            <p>
+              <Clock3 size={17} /> Mon–Sun · 10 AM–10 PM
+            </p>
+            <p>
+              <FaInstagram size={17} /> @shubhamk.online
+            </p>
             <div className="fy-contact-note">
               <CalendarDays size={19} />
-              <span><strong>First consultation</strong><small>Discuss your goals and find your ideal program.</small></span>
+              <span>
+                <strong>First consultation</strong>
+                <small>Discuss your goals and find your ideal program.</small>
+              </span>
             </div>
           </div>
 
@@ -385,7 +477,10 @@ export default function FitnessYoga() {
 
             <label>
               Fitness Goal
-              <select value={form.goal} onChange={(e) => updateForm("goal", e.target.value)}>
+              <select
+                value={form.goal}
+                onChange={(e) => updateForm("goal", e.target.value)}
+              >
                 <option>Personal Training</option>
                 <option>Weight Loss</option>
                 <option>Strength Training</option>
@@ -396,7 +491,10 @@ export default function FitnessYoga() {
 
             <label>
               Training Preference
-              <select value={form.mode} onChange={(e) => updateForm("mode", e.target.value)}>
+              <select
+                value={form.mode}
+                onChange={(e) => updateForm("mode", e.target.value)}
+              >
                 <option>In-person</option>
                 <option>Online</option>
                 <option>Group Classes</option>
@@ -414,7 +512,10 @@ export default function FitnessYoga() {
               />
             </label>
 
-            <button className="fy-button fy-button-green fy-submit" type="submit">
+            <button
+              className="fy-button fy-button-green fy-submit"
+              type="submit"
+            >
               Send Enquiry on WhatsApp <ArrowRight size={15} />
             </button>
           </form>
@@ -423,8 +524,13 @@ export default function FitnessYoga() {
 
       <footer className="fy-footer">
         <a href="#fy-home" className="fy-brand">
-          <span className="fy-brand-icon"><Activity size={26} /></span>
-          <span><strong>FITLIFE</strong><small>FITNESS & YOGA</small></span>
+          <span className="fy-brand-icon">
+            <Activity size={26} />
+          </span>
+          <span>
+            <strong>FITLIFE</strong>
+            <small>FITNESS & YOGA</small>
+          </span>
         </a>
         <p>Stronger every day. Healthier for life.</p>
         <div className="fy-footer-links">
@@ -434,14 +540,34 @@ export default function FitnessYoga() {
             ["Programs", "#fy-programs"],
             ["Testimonials", "#fy-reviews"],
             ["Contact", "#fy-contact"],
-          ].map(([label, href]) => <a key={label} href={href}>{label}</a>)}
+          ].map(([label, href]) => (
+            <a key={label} href={href}>
+              {label}
+            </a>
+          ))}
         </div>
         <div className="fy-footer-social">
-          <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" aria-label="Instagram"><FaInstagram size={18} /></a>
-          <a href="#fy-contact" aria-label="Email"><Mail size={18} /></a>
+          <a
+            href="https://www.instagram.com/shubhamk.online?rpxt=MXVzajlmbW96MDNmbA=="
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Instagram"
+          >
+            <FaInstagram size={18} />
+          </a>
+          <a href="shubh18tech@gmail.com" aria-label="Email">
+            <Mail size={18} />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/shubhamkonline"
+            aria-label="LinkedIn"
+          >
+            <FaLinkedinIn size={18} />
+          </a>
         </div>
         <small className="fy-copyright">
-          © {new Date().getFullYear()} FitLife Fitness & Yoga. All rights reserved.
+          © {new Date().getFullYear()} FitLife Fitness & Yoga. All rights
+          reserved.
         </small>
       </footer>
     </div>

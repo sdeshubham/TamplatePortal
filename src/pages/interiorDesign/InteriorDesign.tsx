@@ -177,7 +177,7 @@ export default function InteriorDesign() {
     const data = new FormData(form);
 
     const message = [
-      "Hello The Space Studio, I would like to discuss an interior design project.",
+      "Hello Shubham, I would like to discuss an interior design project.",
       `Name: ${data.get("name")}`,
       `Email: ${data.get("email")}`,
       `Project Type: ${data.get("projectType")}`,
@@ -488,21 +488,21 @@ export default function InteriorDesign() {
           <span className="is-eyebrow">GET IN TOUCH</span>
           <h3>Contact Us</h3>
 
-          <a href="tel:+919876543210">
+          <a href="tel:+917354400317">
             <Phone size={17} />
-            <span>+91 98765 43210</span>
+            <span>+91 73544 00317</span>
           </a>
           <a href="mailto:hello@thespacestudio.com">
             <Mail size={17} />
-            <span>hello@thespacestudio.com</span>
+            <span>shubh18tech@gmail.com</span>
           </a>
           <p>
             <MapPin size={17} />
-            <span>Indore, Madhya Pradesh</span>
+            <span>Mumbai, Maharashtra</span>
           </p>
           <p>
             <Clock3 size={17} />
-            <span>Mon – Sat: 10:00 AM – 7:00 PM</span>
+            <span>Mon – Sun: 10:00 AM – 10:00 PM</span>
           </p>
         </div>
 
@@ -580,7 +580,7 @@ export default function InteriorDesign() {
 
         <div className="is-socials">
           <a
-            href="https://instagram.com/"
+            href="https://www.instagram.com/shubhamk.online?rpxt=MXVzajlmbW96MDNmbA=="
             aria-label="Instagram"
             target="_blank"
             rel="noreferrer"
@@ -589,7 +589,7 @@ export default function InteriorDesign() {
           </a>
 
           <a
-            href="https://facebook.com/"
+            href="/"
             aria-label="Facebook"
             target="_blank"
             rel="noreferrer"
@@ -598,7 +598,7 @@ export default function InteriorDesign() {
           </a>
 
           <a
-            href="https://linkedin.com/"
+            href="https://www.linkedin.com/in/shubhamkonline"
             aria-label="LinkedIn"
             target="_blank"
             rel="noreferrer"
@@ -608,14 +608,14 @@ export default function InteriorDesign() {
         </div>
 
         <div className="is-footer-bottom">
-          <span>© 2026 The Space Studio. All rights reserved.</span>
+          <span>© 2026 All rights reserved.</span>
           <span>Designed for Beautiful Living</span>
         </div>
       </footer>
 
       {/* FLOATING WHATSAPP */}
       <a
-        href="https://wa.me/919876543210"
+        href="https://wa.me/917354400317"
         className="is-whatsapp"
         target="_blank"
         rel="noreferrer"

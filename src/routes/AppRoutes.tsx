@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-
+import "../App.css";
 import PageTitle from "../components/common/PageTitle.js";
 import MakeOver from "../pages/makeOver/MakeOver.js";
 import InteriorDesign from "../pages/interiorDesign/InteriorDesign.js";
@@ -83,7 +83,15 @@ const AppRoutes = () => {
       />
 
       {/* Page Not Found */}
-      <Route path="*" element={<h1>404 - Page Not Found</h1>} />
+      <Route
+        path="*"
+        element={
+          <div className="pageNotFound">
+            <h1>404 - Somthing went wrong!</h1>
+            <p>Try Again Later...</p>
+          </div>
+        }
+      />
     </Routes>
   );
 };

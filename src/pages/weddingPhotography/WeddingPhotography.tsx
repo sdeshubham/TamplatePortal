@@ -99,7 +99,7 @@ export default function WeddingPhotography() {
     event.preventDefault();
 
     const message = [
-      "Hello EverAfter Photography!",
+      "Hello Shubham!",
       `Name: ${form.name}`,
       `Email: ${form.email}`,
       `Event: ${form.event}`,
@@ -108,7 +108,7 @@ export default function WeddingPhotography() {
     ].join("\n");
 
     window.open(
-      `https://wa.me/?text=${encodeURIComponent(message)}`,
+      `https://wa.me/917354400317?text=${encodeURIComponent(message)}`,
       "_blank",
       "noopener,noreferrer",
     );
@@ -365,16 +365,16 @@ export default function WeddingPhotography() {
             <span className="wp-eyebrow wp-eyebrow-dark">GET IN TOUCH</span>
             <h3>We'd Love to Hear From You</h3>
             <p>
-              <Phone size={17} /> +91 98765 43210
+              <Phone size={17} /> +91 73544 00317
             </p>
             <p>
-              <Mail size={17} /> hello@everafterstudio.com
+              <Mail size={17} /> shubh18tech@gmail.com
             </p>
             <p>
-              <MapPin size={17} /> Indore, Madhya Pradesh
+              <MapPin size={17} /> Mumbai, Maharashtra
             </p>
             <p>
-              <FaInstagram size={17} /> @everafterphotography
+              <FaInstagram size={17} /> @shubhamk.online
             </p>
             <small>Available for weddings & destination shoots.</small>
           </div>
@@ -465,14 +465,14 @@ export default function WeddingPhotography() {
         </div>
         <div className="wp-footer-social">
           <a
-            href="https://www.instagram.com/"
+            href="https://www.instagram.com/shubhamk.online?rpxt=MXVzajlmbW96MDNmbA=="
             target="_blank"
             rel="noreferrer"
             aria-label="Instagram"
           >
             <FaInstagram size={18} />
           </a>
-          <a href="#wp-contact" aria-label="Email">
+          <a href="shubh18tech@gmail.com" aria-label="Email">
             <Mail size={18} />
           </a>
         </div>

@@ -98,7 +98,7 @@ export default function BoutiqueDesign() {
               </a>
               <a
                 className="eclat-btn eclat-btn-outline"
-                href="https://wa.me/919876543210"
+                href="https://wa.me/917354400317"
               >
                 ◉ Chat on WhatsApp
               </a>
@@ -274,7 +274,7 @@ export default function BoutiqueDesign() {
               </a>
               <a
                 className="eclat-btn eclat-btn-outline"
-                href="https://wa.me/919876543210"
+                href="https://wa.me/917354400317"
               >
                 ◉ Chat on WhatsApp
               </a>
@@ -295,21 +295,21 @@ export default function BoutiqueDesign() {
             <div className="eclat-contact-line">
               <span>☎</span>
               <div>
-                <b>+91 98765 43210</b>
+                <b>+91 73544 00317</b>
                 <small>Call or WhatsApp</small>
               </div>
             </div>
             <div className="eclat-contact-line">
               <span>✉</span>
               <div>
-                <b>hello@eclatboutique.com</b>
+                <b>shubh18tech@gmail.com</b>
                 <small>Drop us an email</small>
               </div>
             </div>
             <div className="eclat-contact-line">
               <span>⌖</span>
               <div>
-                <b>Indore, Madhya Pradesh</b>
+                <b>Mumbai, Maharashtra</b>
                 <small>Visit our studio</small>
               </div>
             </div>
@@ -319,9 +319,9 @@ export default function BoutiqueDesign() {
             onSubmit={(e) => {
               e.preventDefault();
               window.location.href =
-                "https://wa.me/919876543210?text=" +
+                "https://wa.me/917354400317?text=" +
                 encodeURIComponent(
-                  "Hi Éclat, I would like to enquire about a custom outfit.",
+                  "Hi Shubham, I would like to enquire about a custom outfit.",
                 );
             }}
           >
@@ -380,9 +380,9 @@ export default function BoutiqueDesign() {
           </div>
           <div>
             <b>Contact Us</b>
-            <span>+91 98765 43210</span>
-            <span>hello@eclatboutique.com</span>
-            <span>Indore, Madhya Pradesh</span>
+            <span>+91 73544 00317</span>
+            <span>shubh18tech@gmail.com</span>
+            <span>Mumbai, Maharashtra</span>
           </div>
           <div>
             <b>Follow Us</b>

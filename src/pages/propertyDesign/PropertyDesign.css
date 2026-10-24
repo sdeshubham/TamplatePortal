@@ -112,7 +112,7 @@
 }
 .prime-search {
   position: absolute;
-  bottom: 26px;
+  bottom: 16px;
   left: 6.5%;
   width: min(760px, 87%);
   background: #fff;
